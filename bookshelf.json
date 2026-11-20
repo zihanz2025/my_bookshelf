@@ -1,0 +1,215 @@
+{
+  "shelfCount": 4,
+  "shelves": [
+    "Shelf 1",
+    "Shelf 2",
+    "Shelf 3",
+    "Shelf 4"
+  ],
+  "books": [
+    {
+      "id": "640c3f32-7387-4989-9bb4-0fbd0e6a1841",
+      "googleId": "xFr92V2k3PIC",
+      "title": "The Fellowship of the Ring (The Lord of the Rings, Book 1)",
+      "authors": [
+        "J. R. R. Tolkien"
+      ],
+      "thumbnail": "https://books.google.com/books/content?id=xFr92V2k3PIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "description": "Darkness Will Bind Them... watch The Lord of the Rings: The Rings of Power season 2 on Prime Video",
+      "publisher": "HarperCollins UK",
+      "publishedDate": "2009-04-20",
+      "pageCount": 442,
+      "shelfIndex": 0,
+      "order": 3,
+      "hue": 105,
+      "dimEnriched": true
+    },
+    {
+      "id": "594fdb81-7aca-425b-94be-3d6576995870",
+      "googleId": "7iNjkPj3OEAC",
+      "title": "The Return of the King",
+      "authors": [
+        "John Ronald Reuel Tolkien",
+        "(John Ronald Reuel), . Tolkien"
+      ],
+      "thumbnail": "https://books.google.com/books/content?id=7iNjkPj3OEAC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "In this final book, the courageous hobbit Frodo Baggins completes his heroic quest.",
+      "publisher": "",
+      "publishedDate": "1965",
+      "pageCount": 444,
+      "shelfIndex": 0,
+      "order": 5,
+      "hue": 338,
+      "dimensions": {
+        "height": "22.00 cm"
+      },
+      "dimEnriched": true
+    },
+    {
+      "id": "b6a2d685-09da-4553-8f48-0201120726db",
+      "googleId": "tit1EAAAQBAJ",
+      "title": "The Silmarillion",
+      "authors": [
+        "J. R. R. Tolkien"
+      ],
+      "thumbnail": "https://books.google.com/books/content?id=tit1EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "description": "For the first time ever, a very special edition of the forerunner to The Lord of the Rings, illustrated throughout in colour by J.R.R. Tolkien himself and with the complete text.",
+      "publisher": "HarperCollins UK",
+      "publishedDate": "2022-11-10",
+      "pageCount": 377,
+      "shelfIndex": 0,
+      "order": 6,
+      "hue": 207,
+      "dimEnriched": true
+    },
+    {
+      "id": "ee1d18c4-0aee-46fc-9f03-82e1044bb2a5",
+      "googleId": "m1Q50AEACAAJ",
+      "title": "The Two Towers",
+      "authors": [
+        "John Ronald Reuel Tolkien"
+      ],
+      "thumbnail": "https://books.google.com/books/content?id=m1Q50AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "",
+      "publisher": "",
+      "publishedDate": "1999",
+      "pageCount": 439,
+      "dimensions": {
+        "height": "18.00 cm"
+      },
+      "shelfIndex": 0,
+      "order": 4,
+      "hue": 359,
+      "dimEnriched": true
+    },
+    {
+      "id": "2c92dca5-e9ef-42d4-a062-1497c8f87f01",
+      "googleId": "858oEyeN1N8C",
+      "title": "A Room of One's Own",
+      "authors": [
+        "Virginia Woolf"
+      ],
+      "thumbnail": "https://books.google.com/books/content?id=858oEyeN1N8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "description": "\"But, you may say, we asked you to speak about women and fiction—what has that got to do with a room of one's own? I will try to explain.\" So begins what is widely regarded as the foundation text of feminist literary criticism, Virginia Woolf's A Room of One's Own. Probably Woolf's most readable and entertaining book, it was based on papers delivered at Newnham and Girton Colleges—the two women's colleges at Cambridge University. Never losing sight of her undergraduate audience, Woolf provides a brief history of women's writing in English, a scathing account of the subtle and not so subtle ways in which women have been discouraged from writing, and a recommendation for how to change matters: \"a woman must have money and a room of her own if she is to write fiction.\" In the process, Woolf takes on women's economic disadvantages, the underfunding of women's education, the discouragement of women from certain kinds of (lucrative) work, the ways in which women are socialized into suspicion of each other, and how women participate in their own systemic oppression. Yet, in spite of these weighty subjects, A Room of One's Own remains throughout funny, light-hearted, engaging for the novice reader while still offering \"nuggets\" to the worldy-wise. It is, above and beyond all else, a very model of essay writing. This Broadview edition provides a reliable text at a very reasonable price. It contains textual notes but no appendices or introduction.",
+      "publisher": "Broadview Press",
+      "publishedDate": "2001-11-27",
+      "pageCount": 137,
+      "dimensions": {
+        "height": "21.60 cm",
+        "width": "14.00 cm"
+      },
+      "shelfIndex": 1,
+      "order": 0,
+      "hue": 300,
+      "dimEnriched": true
+    },
+    {
+      "id": "c9fef83e-ee0a-497f-a5fd-c9f8daae03f1",
+      "googleId": "IAVT6awraTAC",
+      "title": "Rebecca",
+      "authors": [
+        "Daphne du Maurier"
+      ],
+      "thumbnail": "https://books.google.com/books/content?id=IAVT6awraTAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "description": "The bestselling classic and masterpiece of psychological fiction 'The greatest psychological thriller of all time' ERIN KELLY 'The book every writer wishes they'd written' CLARE MACKINTOSH 'Excellent entertainment . . . du Maurier created a scale by which modern women can measure their feelings' STEPHEN KING On a trip to the South of France, the shy heroine of Rebecca falls in love with Maxim de Winter, a handsome widower. Although his proposal comes as a surprise, she happily agrees to marry him. But as they arrive at her husband's home, Manderley, a change comes over Maxim, and the young bride is filled with dread. Friendless in the isolated mansion, she realises that she barely knows him. In every corner of every room is the phantom of his beautiful first wife, Rebecca, and the new Mrs de Winter walks in her shadow. Not since Jane Eyre has a heroine faced such difficulty with the other woman. An international bestseller that has never gone out of print, Rebecca is the haunting story of a young girl consumed by love and the struggle to find her identity. 'Rebecca is a masterpiece' GUARDIAN 'This chilling, suspenseful tale is as fresh and readable as it was when it was first written' DAILY TELEGRAPH",
+      "publisher": "Hachette UK",
+      "publishedDate": "2012-02-09",
+      "pageCount": 488,
+      "dimensions": null,
+      "shelfIndex": 0,
+      "order": 1,
+      "hue": 273,
+      "dimEnriched": true
+    },
+    {
+      "id": "1a7e7238-9119-4201-9e4a-40bd6528beb7",
+      "googleId": "cydstAEACAAJ",
+      "title": "Frankenstein",
+      "authors": [
+        "Mary Shelley"
+      ],
+      "thumbnail": "https://books.google.com/books/content?id=cydstAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "THE HORROR CLASSIC Mary Shelley's Gothic masterpiece novel introduced the world to Baron Victor Frankenstein and his quest to create new life from death, resulting in the birth of one of the most famous and iconic monsters in history. Frankenstein's creation brings ruin and despair to Victor... and death to many, many others.",
+      "publisher": "Createspace Independent Publishing Platform",
+      "publishedDate": "2018-01-13",
+      "pageCount": 280,
+      "dimensions": {
+        "height": "22.90 cm",
+        "width": "15.20 cm",
+        "thickness": "1.50 cm"
+      },
+      "shelfIndex": 0,
+      "order": 2,
+      "hue": 51,
+      "dimEnriched": true
+    },
+    {
+      "id": "92b53f5e-8e39-42a4-b22d-7ba5f9dacba7",
+      "googleId": "pxK-jkLVHK0C",
+      "title": "Cosmos",
+      "authors": [
+        "Carl Sagan"
+      ],
+      "thumbnail": "https://books.google.com/books/content?id=pxK-jkLVHK0C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "Based on the television series cosmos.",
+      "publisher": "Random House Digital, Inc.",
+      "publishedDate": "1980",
+      "pageCount": 376,
+      "dimensions": {
+        "height": "18.00 cm",
+        "width": "10.70 cm",
+        "thickness": "2.60 cm"
+      },
+      "shelfIndex": 2,
+      "order": 0,
+      "hue": 80,
+      "dimEnriched": true
+    },
+    {
+      "id": "4f491443-4bba-4cbe-b01d-e41db99387b2",
+      "googleId": "eqI6zgEACAAJ",
+      "title": "Pride and Prejudice",
+      "authors": [
+        "Jane Austen"
+      ],
+      "thumbnail": "https://books.google.com/books/content?id=eqI6zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "Pride and Prejudice is a romantic novel of manners written by Jane Austen in 1813. The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness. Its humour lies in its honest depiction of manners, education, marriage, and money during the Regency era in Great Britain.",
+      "publisher": "",
+      "publishedDate": "2021-02-11",
+      "pageCount": 466,
+      "dimensions": {
+        "height": "21.60 cm",
+        "width": "14.00 cm",
+        "thickness": "2.40 cm"
+      },
+      "shelfIndex": 0,
+      "order": 0,
+      "hue": 262,
+      "dimEnriched": true
+    },
+    {
+      "id": "101b147e-d69a-4685-95e0-3ec0c01693c4",
+      "googleId": "roJfzgEACAAJ",
+      "title": "Emma",
+      "authors": [
+        "Jane Austen"
+      ],
+      "thumbnail": "https://books.google.com/books/content?id=roJfzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "Emma Woodhouse, handsome, clever, and rich, with a comfortable home andhappy disposition, seemed to unite some of the best blessings of existence; and hadlived nearly twenty-one years in the world with very little to distress or vex her.She was the youngest of the two daughters of a most affectionate, indulgentfather; and had, in consequence of her sister's marriage, been mistress of his housefrom a very early period. Her mother had died too long ago for her to have morethan an indistinct remembrance of her caresses; and her place had been suppliedby an excellent woman as governess, who had fallen little short of a mother inaffection.Sixteen years had Miss Taylor been in Mr. Woodhouse's family, less as agoverness than a friend, very fond of both daughters, but particularly of Emma.Between them it was more the intimacy of sisters. Even before Miss Taylor hadceased to hold the nominal office of governess, the mildness of her temper hadhardly allowed her to impose any restraint; and the shadow of authority being nowlong passed away, they had been living together as friend and friend very mutuallyattached, and Emma doing just what she liked; highly esteeming Miss Taylor'sjudgment, but directed chiefly by her own.",
+      "publisher": "",
+      "publishedDate": "2021-03-30",
+      "pageCount": 342,
+      "dimensions": {
+        "height": "28.00 cm",
+        "width": "21.60 cm",
+        "thickness": "1.80 cm"
+      },
+      "shelfIndex": 3,
+      "order": 0,
+      "hue": 166,
+      "dimEnriched": true
+    }
+  ],
+  "shelfRows": 2,
+  "shelfCols": 2
+}

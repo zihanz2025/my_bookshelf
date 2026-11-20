@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookshelf — Visual Book Organizer</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Identity Services — for OAuth 2.0 (access user's Google Books) -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <header class="app-header">
+    <h1>📚 My Bookshelf</h1>
+    <div class="header-actions">
+      <button id="btn-api-key" class="btn btn-ghost" title="Settings">⚙️ Settings</button>
+      <button id="btn-export" class="btn btn-ghost" title="Export your bookshelf">Export</button>
+      <button id="btn-import" class="btn btn-ghost" title="Import a saved bookshelf">Import</button>
+      <input type="file" id="import-file" accept="application/json" hidden>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <!-- Sidebar: Search + Google Shelves -->
+    <aside class="sidebar">
+      <div class="search-section">
+        <h2>Add Books</h2>
+        <p class="hint">Search the Google Books API and add books to your shelf.</p>
+        <div class="search-box">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search by title, author, ISBN..."
+            autocomplete="off"
+          >
+          <button id="search-btn" class="btn btn-primary">Search</button>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+
+      <!-- Divider -->
+      <div class="sidebar-divider"></div>
+
+      <!-- Google Shelves (OAuth) -->
+      <div class="gbooks-section">
+        <div class="gbooks-header">
+          <h2>My Google Books</h2>
+          <span id="oauth-status" class="oauth-status disconnected">● Not connected</span>
+        </div>
+        <div id="oauth-body" class="oauth-body">
+          <p class="hint" id="oauth-prompt">
+            Connect your Google account to import books you've saved to
+            <a href="https://books.google.com" target="_blank" rel="noopener">books.google.com</a>.
+          </p>
+          <button id="oauth-signin" class="btn btn-primary">🔑 Sign in with Google</button>
+        </div>
+        <div id="oauth-shelves" class="oauth-shelves hidden"></div>
+      </div>
+    </aside>
+
+    <!-- Bookshelf -->
+    <section class="bookshelf-container">
+      <div class="bookshelf-toolbar">
+        <div class="shelf-controls">
+          <label>Layout:
+            <input id="shelf-rows" type="number" min="1" max="6" value="4" title="Rows">
+            ×
+            <input id="shelf-cols" type="number" min="1" max="6" value="1" title="Columns">
+            <span id="shelf-total" class="shelf-total">= 4 shelves</span>
+            <button id="apply-shelves" class="btn btn-sm">Apply</button>
+          </label>
+        </div>
+        <div class="mode-switch">
+          <button id="mode-arrange" class="btn btn-mode active">Arrange Mode</button>
+          <button id="mode-view" class="btn btn-mode">View Mode</button>
+        </div>
+        <div class="stats" id="stats"></div>
+      </div>
+
+      <div id="bookshelf" class="bookshelf"></div>
+    </section>
+  </main>
+
+  <!-- Book Detail Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Settings Modal (API key + OAuth Client ID) -->
+  <div id="settings-modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close" id="settings-close">&times;</button>
+      <div class="modal-body" id="settings-body">
+        <div class="modal-info">
+          <h3>🔧 Settings</h3>
+
+          <!-- API Key block -->
+          <div class="settings-block">
+            <h4>Google Books API Key <span id="api-key-status" class="api-key-status"></span></h4>
+            <p class="hint">
+              Required for search (public catalog). Free:
+              <a href="https://console.cloud.google.com/apis/library/books.googleapis.com"
+                 target="_blank" rel="noopener">Enable Books API</a>
+              → Create Credentials → API key.
+            </p>
+            <div class="settings-row">
+              <label>API key:</label>
+              <input id="api-key-input" type="password" placeholder="AIzaSy..." autocomplete="off">
+            </div>
+            <div class="settings-actions">
+              <button id="api-key-save" class="btn btn-sm">Save Key</button>
+              <button id="api-key-clear" class="btn btn-ghost" style="color:#333;">Clear</button>
+            </div>
+          </div>
+
+          <div class="settings-separator"></div>
+
+          <!-- OAuth Client ID block -->
+          <div class="settings-block">
+            <h4>OAuth Client ID <span id="oauth-client-status" class="api-key-status"></span></h4>
+            <p class="hint">
+              Required for <b>"My Google Books"</b> import (your personal shelves).
+              Get a free Client ID:
+              <a href="https://console.cloud.google.com/apis/credentials/oauthclient"
+                 target="_blank" rel="noopener">Create OAuth Client ID</a>
+              → Application type: <b>Web application</b> →
+              Authorized JavaScript origins: add <code id="current-origin">http://localhost:8080</code>.
+            </p>
+            <div class="settings-row">
+              <label>Client ID:</label>
+              <input id="oauth-client-id" type="text" placeholder="xxx.apps.googleusercontent.com" autocomplete="off">
+            </div>
+            <div class="settings-actions">
+              <button id="oauth-client-save" class="btn btn-sm">Save Client ID</button>
+              <button id="oauth-client-clear" class="btn btn-ghost" style="color:#333;">Clear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
